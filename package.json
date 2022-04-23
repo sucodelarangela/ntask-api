@@ -1,0 +1,21 @@
+{
+  "name": "ntask-api",
+  "version": "1.0.0",
+  "description": "API de gestão de tarefas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sucodelarangela/ntask.git"
+  },
+  "author": "Angela E. S. Caldas",
+  "bugs": {
+    "url": "https://github.com/sucodelarangela/ntask/issues"
+  },
+  "homepage": "https://github.com/sucodelarangela/ntask#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
