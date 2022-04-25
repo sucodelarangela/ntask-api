@@ -14,7 +14,7 @@ Funcionalidades:
 
 Passos da implementação:
 
-- [x] Instalação do `express` e configuraçao inicial do app
+- [x] Instalação do `express` e configuraçao inicial do app ([https://expressjs.com/](https://expressjs.com/))
 - [x] Criação de novo endpoint teste
 - [x] Instalação do `consign`
 - [x] Organização do carregamento em módulos (padrão MVR), com diretórios _routes_ e _models_ e arquivos _middlewares.js_ e _boot.js_
