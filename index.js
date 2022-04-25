@@ -1,15 +1,12 @@
 const express = require('express')
 const consign = require('consign')
 
-const PORT = 3000
 const app = express()
 
-// to format JSON view in the browser, you can use the following code:
-app.set('json spaces', 4)
-
 // import models and routes into express app using consign
-consign().include('models').then('routes').into(app)
-
-app.listen(PORT, () => {
-  console.log(`NTask API running on port ${PORT}`)
-})
+consign()
+  .include('models')
+  .then('middlewares.js')
+  .then('routes')
+  .then('boot.js') // initialize the server with app.listen
+  .into(app)
