@@ -21,6 +21,8 @@ Passos da implementação:
 - [x] Refatoraçao do _index.js_ utilizando o `consign`
 - [x] Instalação do `SQLite3` ([https://www.sqlite.org/download.html](https://www.sqlite.org/download.html))
 - [x] Instalação do `sequelize` ([https://sequelize.org](https://sequelize.org))
+- [x] Arquivo de configuração de conexão entre `Sequelize` e `SQLite3` (_config.js_)
+- [x] Arquivo responsável pela conexão (_db.js_)
 
 ---
 
