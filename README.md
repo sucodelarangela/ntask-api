@@ -19,6 +19,8 @@ Passos da implementação:
 - [x] Instalação do `consign`
 - [x] Organização do carregamento em módulos (padrão MVR), com diretórios _routes_ e _models_ e arquivos _middlewares.js_ e _boot.js_
 - [x] Refatoraçao do _index.js_ utilizando o `consign`
+- [x] Instalação do `SQLite3` ([https://www.sqlite.org/download.html](https://www.sqlite.org/download.html))
+- [x] Instalação do `sequelize` ([https://sequelize.org](https://sequelize.org))
 
 ---
 
