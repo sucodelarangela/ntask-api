@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/sucodelarangela/ntask#readme",
   "dependencies": {
+    "consign": "^0.1.6",
     "express": "^4.17.3"
   }
 }

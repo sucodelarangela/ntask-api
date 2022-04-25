@@ -2,6 +2,8 @@
 
 Gerenciador de tarefas dividido em 2 projetos: o primeiro será uma API servidora dos dados, e o segundo será um cliente web consumidor do primeiro.
 
+O projeto vai usar o padrão de organização MVR (_Model-View-Router_) utilizando o módulo `consign`.
+
 Funcionalidades:
 
 - Listagem de tarefas do usuário;
