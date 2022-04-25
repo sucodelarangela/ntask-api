@@ -23,6 +23,7 @@ Passos da implementação:
 - [x] Instalação do `sequelize` ([https://sequelize.org](https://sequelize.org))
 - [x] Arquivo de configuração de conexão entre `Sequelize` e `SQLite3` (_config.js_)
 - [x] Arquivo responsável pela conexão (_db.js_)
+- [] Autenticação para inicialização do servidor da API
 
 ---
 
