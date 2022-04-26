@@ -24,7 +24,8 @@ Passos da implementação:
 - [x] Arquivo de configuração de conexão entre `Sequelize` e `SQLite3` (_config.js_)
 - [x] Arquivo responsável pela conexão (_db.js_)
 - [x] Autenticação para inicialização do servidor da API
-- [ ] Modelagem da aplicação com Sequelize
+- [x] Modelagem da aplicação com Sequelize
+- [ ] Definindo associações das tabelas
 
 ---
 

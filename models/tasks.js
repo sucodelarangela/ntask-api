@@ -31,4 +31,5 @@ module.exports = app => {
 Code was refactored.
 
 app.db.define('Tasks') - responsible for creating the model class in back-end and creating a table. The fields of this table are defined in its second parameter (which is an object with 'id', 'title' and 'done')
+
 */
