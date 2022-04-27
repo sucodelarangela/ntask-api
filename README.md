@@ -26,7 +26,9 @@ Passos da implementação:
 - [x] Autenticação para inicialização do servidor da API
 - [x] Modelagem da aplicação com Sequelize
 - [x] Definindo associações das tabelas
-- [ ] Organização das rotas das tarefas
+- [x] Organização das rotas das tarefas
+- [ ] Implementação de um middleware
+- [ ] Listar tarefas com GET
 
 ---
 
