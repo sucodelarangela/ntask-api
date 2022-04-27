@@ -20,8 +20,15 @@ module.exports = app => {
         // (412) Precondition failed - generically returns validation or consult errors
       }
     })
-    .post((req, res) => {
-      // "/tasks": registers a new task
+    .post(async (req, res) => {
+      try {
+        // "/tasks": creates a new task
+        const result = await Tasks.create(req.body)
+        res.json(result)
+      } catch (err) {
+        res.status(412).json({msg: err.message})
+        // (412) Precondition failed - generically returns validation or consult errors
+      }
     })
 
   app
