@@ -10,8 +10,15 @@ module.exports = app => {
       delete req.body.id // forbids the use of req.body.id to avoid overwritting of it on database
       next()
     })
-    .get((req, res) => {
-      // "/tasks": lists tasks
+    .get(async (req, res) => {
+      try {
+        // "/tasks": lists all tasks
+        const result = await Tasks.findAll()
+        res, json(result)
+      } catch (err) {
+        res.status(412).json({msg: err.message})
+        // (412) Precondition failed - generically returns validation or consult errors
+      }
     })
     .post((req, res) => {
       // "/tasks": registers a new task

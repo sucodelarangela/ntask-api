@@ -28,7 +28,7 @@ Passos da implementação:
 - [x] Definindo associações das tabelas
 - [x] Organização das rotas das tarefas
 - [x] Implementação de um middleware
-- [ ] Listar tarefas com GET
+- [ ] CRUD do recurso `/tasks`
 
 ---
 
