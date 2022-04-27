@@ -5,8 +5,10 @@ module.exports = app => {
 
   app
     .route('/tasks')
-    .all((req, res) => {
+    .all((req, res, next) => {
       // Middleware for pre execution of routes
+      delete req.body.id // forbids the use of req.body.id to avoid overwritting of it on database
+      next()
     })
     .get((req, res) => {
       // "/tasks": lists tasks
@@ -17,8 +19,10 @@ module.exports = app => {
 
   app
     .route('/tasks/:id')
-    .all((req, res) => {
+    .all((req, res, next) => {
       // Middleware for pre execution of routes
+      delete req.body.id // forbids the use of req.body.id to avoid overwritting of it on database
+      next()
     })
     .get((req, res) => {
       // "tasks/1": Consults a task
