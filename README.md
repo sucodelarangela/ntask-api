@@ -25,7 +25,8 @@ Passos da implementação:
 - [x] Arquivo responsável pela conexão (_db.js_)
 - [x] Autenticação para inicialização do servidor da API
 - [x] Modelagem da aplicação com Sequelize
-- [ ] Definindo associações das tabelas
+- [x] Definindo associações das tabelas
+- [ ] Organização das rotas das tarefas
 
 ---
 
