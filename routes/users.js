@@ -30,7 +30,7 @@ module.exports = app => {
     }
   })
 
-  app.post('/users/:id', async (req, res) => {
+  app.post('/users', async (req, res) => {
     try {
       const result = await Users.create(req.body)
       res.json(result)
