@@ -30,7 +30,8 @@ Passos da implementação:
 - [x] Implementação de um middleware
 - [x] CRUD do recurso `/tasks`
 - [x] Refatoração do middleware existente e instalação do middleware `body-parser`
-- [ ] Rotas de gestão de usuários
+- [x] CRUD do recurso `users`
+- [ ] Teste das rotas com Postman
 
 ---
 
