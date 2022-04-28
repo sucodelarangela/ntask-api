@@ -28,7 +28,9 @@ Passos da implementação:
 - [x] Definindo associações das tabelas
 - [x] Organização das rotas das tarefas
 - [x] Implementação de um middleware
-- [ ] CRUD do recurso `/tasks`
+- [x] CRUD do recurso `/tasks`
+- [ ] Refatoração do middleware
+- [ ] Rotas de gestão de usuários
 
 ---
 

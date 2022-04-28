@@ -38,16 +38,47 @@ module.exports = app => {
       delete req.body.id // forbids the use of req.body.id to avoid overwritting of it on database
       next()
     })
-    .get((req, res) => {
-      // "tasks/1": Consults a task
+    .get(async (req, res) => {
+      try {
+        // "tasks/1": Consults a task
+        const {id} = req.params
+        const where = {id}
+        const result = await Tasks.findOne({where})
+
+        if (result) {
+          res.json(result)
+        } else {
+          res.sendStatus(404) // Not found
+        }
+      } catch (err) {
+        res.status(412).json({msg: err.message})
+      }
     })
-    .put((req, res) => {
-      // "tasks/1": Updates a task
+    .put(async (req, res) => {
+      try {
+        // "tasks/1": Updates a task
+        const {id} = req.params
+        const where = {id}
+        await Tasks.update(req.body, {where}) // 1st param: data to be updated; 2nd param: object with consult data from the tasks to be updated
+        res.sendStatus(204) // No Content: it means the requisition was successful, but no data is returned
+      } catch (err) {
+        res.status(412).json({msg: err.message})
+      }
     })
     .delete((req, res) => {
-      // "tasks/1": Deletes a task
+      try {
+        // "tasks/1": Deletes a task
+        const {id} = req.params
+        const where = {id}
+        await Tasks.destroy({where})
+        res.sendStatus(204)
+      } catch (err) {
+        res.status(412).json({msg: err.message})
+      }
     })
 }
+
+// Tasks.create() and Tasks.update() clean the fields that do not exist in the models, so there is no problem to send req.body directly
 
 // PREVIOUS CODE:
 // // adding static data to mold the endpoints
