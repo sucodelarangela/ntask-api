@@ -3,7 +3,8 @@
 module.exports = app => {
   const Tasks = app.models.Tasks
 
-  app.route('/tasks')
+  app
+    .route('/tasks')
     .get(async (req, res) => {
       try {
         // "/tasks": lists all tasks
@@ -25,7 +26,8 @@ module.exports = app => {
       }
     })
 
-  app.route('/tasks/:id')
+  app
+    .route('/tasks/:id')
     .get(async (req, res) => {
       try {
         // "tasks/1": Consults a task
@@ -53,7 +55,7 @@ module.exports = app => {
         res.status(412).json({msg: err.message})
       }
     })
-    .delete((req, res) => {
+    .delete(async (req, res) => {
       try {
         // "tasks/1": Deletes a task
         const {id} = req.params
