@@ -29,7 +29,7 @@ Passos da implementação:
 - [x] Organização das rotas das tarefas
 - [x] Implementação de um middleware
 - [x] CRUD do recurso `/tasks`
-- [ ] Refatoração do middleware
+- [x] Refatoração do middleware existente e instalação do middleware `body-parser`
 - [ ] Rotas de gestão de usuários
 
 ---

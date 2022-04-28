@@ -3,13 +3,7 @@
 module.exports = app => {
   const Tasks = app.models.Tasks
 
-  app
-    .route('/tasks')
-    .all((req, res, next) => {
-      // Middleware for pre execution of routes
-      delete req.body.id // forbids the use of req.body.id to avoid overwritting of it on database
-      next()
-    })
+  app.route('/tasks')
     .get(async (req, res) => {
       try {
         // "/tasks": lists all tasks
@@ -31,13 +25,7 @@ module.exports = app => {
       }
     })
 
-  app
-    .route('/tasks/:id')
-    .all((req, res, next) => {
-      // Middleware for pre execution of routes
-      delete req.body.id // forbids the use of req.body.id to avoid overwritting of it on database
-      next()
-    })
+  app.route('/tasks/:id')
     .get(async (req, res) => {
       try {
         // "tasks/1": Consults a task
