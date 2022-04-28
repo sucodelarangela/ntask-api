@@ -9,7 +9,7 @@ module.exports = app => {
       try {
         // "/tasks": lists all tasks
         const result = await Tasks.findAll()
-        res, json(result)
+        res.json(result)
       } catch (err) {
         res.status(412).json({msg: err.message})
         // (412) Precondition failed - generically returns validation or consult errors
