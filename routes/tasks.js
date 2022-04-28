@@ -1,7 +1,7 @@
 // Code refactored: draft of necessary routes to manage the tasks
 
 module.exports = app => {
-  const Tasks = app.models.Tasks
+  const Tasks = app.models.tasks
 
   app
     .route('/tasks')
