@@ -32,7 +32,7 @@ Passos da implementação:
 - [x] Refatoração do middleware existente e instalação do middleware `body-parser`
 - [x] CRUD do recurso `users`
 - [x] Teste das rotas com Insomnia e possíveis correções
-- [x] Config da autenticação de usuários
+- [x] Arquivo de configuração da autenticação de usuários
 - [ ] Geração de tokens
 
 ---
