@@ -33,6 +33,7 @@ Passos da implementação:
 - [x] CRUD do recurso `users`
 - [x] Teste das rotas com Insomnia e possíveis correções
 - [x] Arquivo de configuração da autenticação de usuários
+- [x] Instalação do bcrypt
 - [ ] Geração de tokens
 
 ---
