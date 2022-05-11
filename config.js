@@ -2,7 +2,7 @@ module.exports = {
   db: {
     database: 'ntask',
     username: '',
-    passsword: '',
+    password: '',
     params: {
       dialect: 'sqlite',
       storage: 'ntask.sqlite',
@@ -12,10 +12,10 @@ module.exports = {
     }
   },
   jwt: {
-    secret: 'Nta$K-AP1',
+    secret: 'Nta$K-4P1',
     options: {session: false}
   }
-}
+};
 
 /*
 This file holds the setup for the conection between Sequelize and SQLite3
